@@ -20,7 +20,10 @@ $nav-min-width: 352px;
     height: $nav-height + 45px;
 
     .logo {
-      display: block;
+      display: initial;
+      &:hover {
+        border-bottom: none;
+      }
     }
   }
 
@@ -34,6 +37,10 @@ $nav-min-width: 352px;
     &:hover {
       text-decoration: none;
       border-bottom: $nav-line-size solid $nav-color;
+    }
+
+    &:visited {
+      text-decoration: none;
     }
   }
 

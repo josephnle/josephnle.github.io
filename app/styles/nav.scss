@@ -1,0 +1,42 @@
+$nav-padding-vertical: 10px;
+$nav-color: #000;
+$nav-line-size: 3px;
+$nav-height: 41px;
+
+.j-nav {
+  height: $nav-height;
+  text-align: center;
+  font-size: $font-size-base * 1.1;
+
+  a {
+    color: black;
+
+    &.active {
+      border-bottom: $nav-line-size solid $nav-color;
+    }
+
+    &:hover {
+      text-decoration: none;
+      border-bottom: $nav-line-size solid $nav-color;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: $nav-padding-vertical 0;
+    margin-bottom: 0;
+
+    li {
+      padding: 0 15px;
+      margin: 0;
+    }
+  }
+
+  @media (min-device-width: $screen-md-min) {
+    ul {
+      li {
+        display: inline;
+      }
+    }
+  }
+}

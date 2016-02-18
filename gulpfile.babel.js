@@ -4,9 +4,30 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
+import layouts from 'handlebars-layouts';
+import handlebarsHelpers from 'handlebars-helpers';
 
-const $ = gulpLoadPlugins();
+const $ = gulpLoadPlugins({
+  rename: {
+    'gulp-ext-replace': 'ext_replace'
+  }
+});
 const reload = browserSync.reload;
+
+layouts.register($.hb.handlebars);
+
+gulp.task('templates', () => {
+  return gulp
+      .src('./app/**/*.{hbs,html}')
+      .pipe($.hb({
+        partials: './partials/**/*.hbs',
+        helpers: handlebarsHelpers,
+        bustCache: true
+      }))
+      .pipe($.ext_replace('.html'))
+      .pipe(gulp.dest('./.tmp/'))
+      .pipe(reload({stream: true}));
+});
 
 gulp.task('styles', () => {
   return gulp.src('app/styles/main.scss')
@@ -51,8 +72,8 @@ const testLintOptions = {
 gulp.task('lint', lint('app/scripts/**/*.js'));
 gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 
-gulp.task('html', ['styles', 'scripts'], () => {
-  return gulp.src('app/*.html')
+gulp.task('html', ['styles', 'scripts', 'templates'], () => {
+  return gulp.src('.tmp/**/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.cssnano()))
@@ -86,7 +107,8 @@ gulp.task('fonts', () => {
 gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
-    '!app/*.html'
+    '!app/*.html',
+    '!app/*.hbs'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));
@@ -94,7 +116,7 @@ gulp.task('extras', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
+gulp.task('serve', ['styles', 'scripts', 'fonts', 'templates'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -107,12 +129,14 @@ gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
   });
 
   gulp.watch([
-    'app/*.html',
+    'app/**/*.{hbs,html}',
+    'partials/**/*.hbs',
     '.tmp/scripts/**/*.js',
     'app/images/**/*',
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
+  gulp.watch(['app/**/*.{hbs,html}', 'partials/**/*.hbs'], ['templates']);
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);
@@ -156,7 +180,7 @@ gulp.task('wiredep', () => {
     }))
     .pipe(gulp.dest('app/styles'));
 
-  gulp.src('app/*.html')
+  gulp.src('app/**/*.{hbs,html}')
     .pipe(wiredep({
       exclude: ['bootstrap-sass'],
       ignorePath: /^(\.\.\/)*\.\./

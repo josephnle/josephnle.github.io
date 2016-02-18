@@ -1,7 +1,7 @@
 $nav-padding-vertical: 10px;
 $nav-color: #000;
 $nav-line-size: 3px;
-$nav-height: 41px;
+$nav-height: 41px + 45px;
 $nav-min-width: 352px;
 
 .j-nav {
@@ -11,19 +11,11 @@ $nav-min-width: 352px;
   font-size: $font-size-base * 1.1;
 
   .logo {
-    display: none;
     font-size: $font-size-h1;
     color: black;
-  }
 
-  &.with-logo {
-    height: $nav-height + 45px;
-
-    .logo {
-      display: initial;
-      &:hover {
-        border-bottom: none;
-      }
+    &:hover {
+      border-bottom: none;
     }
   }
 
@@ -58,9 +50,6 @@ $nav-min-width: 352px;
   }
 
   @media (min-device-width: $screen-md-min) {
-    .logo {
-      display: none;
-    }
 
     ul {
       li {

@@ -129,8 +129,7 @@ gulp.task('serve', ['styles', 'scripts', 'fonts', 'templates'], () => {
   });
 
   gulp.watch([
-    'app/**/*.{hbs,html}',
-    'partials/**/*.hbs',
+    '.tmp/**/*.html',
     '.tmp/scripts/**/*.js',
     'app/images/**/*',
     '.tmp/fonts/**/*'
@@ -180,7 +179,7 @@ gulp.task('wiredep', () => {
     }))
     .pipe(gulp.dest('app/styles'));
 
-  gulp.src('app/**/*.{hbs,html}')
+  gulp.src(['app/**/*.{hbs,html}', 'partials/**/*.hbs'])
     .pipe(wiredep({
       exclude: ['bootstrap-sass'],
       ignorePath: /^(\.\.\/)*\.\./

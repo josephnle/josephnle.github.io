@@ -1,0 +1,67 @@
+@keyframes expand {
+  from {width: 0;}
+  to {width: 35%;}
+}
+
+.projects {
+  padding-top: 20px;
+
+  .project {
+    margin: 40px 0;
+    position: relative;
+
+    &:hover {
+      .overlay {
+        width: 35%;
+        padding: 20px;
+
+        .overlay-content {
+          opacity: 1;
+          transition: opacity 1s;
+          transition-delay: .30s;
+        }
+      }
+    }
+
+    img {
+      position: relative;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .overlay {
+      position: absolute;
+      height: 100%;
+      width: 0;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background-color: rgba(0,0,0,.83);
+      padding: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      animation-name: expand;
+      animation-duration: .75s;
+      animation-direction: reverse;
+      transition: width .65s, padding 1s;
+
+      .overlay-content {
+        text-align: left;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.1s;
+
+        h2 {
+          color: white;
+          margin: 0;
+        }
+      }
+    }
+
+    &:first-child {
+      margin-top: 20px;
+    }
+  }
+}

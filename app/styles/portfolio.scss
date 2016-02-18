@@ -54,8 +54,19 @@
         transition: opacity 0.1s;
 
         h2 {
-          color: white;
           margin: 0;
+        }
+
+        @media (min-width: $screen-md) {
+          h2 {
+            font-size: $font-size-h2 * 1.4;
+          }
+        }
+
+        @media (min-width: $screen-lg) {
+          h2 {
+            font-size: $font-size-h2 * 1.6;
+          }
         }
       }
     }

@@ -22,6 +22,7 @@ gulp.task('templates', () => {
       .pipe($.hb({
         partials: './partials/**/*.hbs',
         helpers: handlebarsHelpers,
+        data: './app/data/**/*.{js,json}',
         bustCache: true
       }))
       .pipe($.ext_replace('.html'))
@@ -135,7 +136,7 @@ gulp.task('serve', ['styles', 'scripts', 'fonts', 'templates'], () => {
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
-  gulp.watch(['app/**/*.{hbs,html}', 'partials/**/*.hbs'], ['templates']);
+  gulp.watch(['app/**/*.{hbs,html}', 'partials/**/*.hbs', 'app/data/**.{js,json}'], ['templates']);
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);

@@ -3,29 +3,23 @@
     {{#content 'content'}}
         <div class="container">
             <div class="projects">
-                <a href="#">
-                    <section class="project">
-                        <img src="http://loremflickr.com/800/300" class="img-responsive" alt="">
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h2>Lake Cristian</h2>
-                                <p>Web Design</p>
-                            </div>
-                        </div>
-                    </section>
-                </a>
 
-                <a href="#">
-                    <section class="project">
-                        <img src="http://loremflickr.com/800/300" class="img-responsive" alt="">
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h2>Lake Cristian</h2>
-                                <p>Web Design</p>
+                {{#each projects}}
+                    <a href="#">
+                        <section class="project">
+                            <img src="http://loremflickr.com/800/300" class="img-responsive" alt="">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h2>{{name}}</h2>
+                                    <p>{{type}}</p>
+                                    {{#if status}}
+                                        <p class="status">{{status}}</p>
+                                    {{/if}}
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                </a>
+                        </section>
+                    </a>
+                {{/each}}
             </div>
         </div>
     {{/content}}

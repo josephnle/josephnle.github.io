@@ -17,7 +17,7 @@
 
         .overlay-content {
           opacity: 1;
-          transition: opacity 1s;
+          transition: opacity 0.9s;
           transition-delay: .30s;
         }
       }
@@ -40,6 +40,7 @@
       padding: 6px;
       display: flex;
       align-items: center;
+      align-content: flex-start;
       justify-content: center;
       flex-direction: column;
       animation-name: expand;
@@ -48,6 +49,8 @@
       transition: width .65s, padding 1s;
 
       .overlay-content {
+        padding: 0 20px;
+        width: 100%;
         text-align: left;
         color: white;
         opacity: 0;
@@ -55,6 +58,17 @@
 
         h2 {
           margin: 0;
+        }
+
+        p {
+          padding: 0;
+          margin: 0;
+        }
+
+        .status {
+          padding: 0;
+          margin: 0;
+          font-style: italic;
         }
 
         @media (min-width: $screen-md) {

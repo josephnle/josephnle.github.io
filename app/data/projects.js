@@ -34,6 +34,6 @@ module.exports = [
     {
         name: "Circle K",
         type: "Web Design & Development",
-        image: "/images/projects/basicbites/home_cropped.png"
+        image: "/images/projects/cki/home_cropped.png"
     }
 ];

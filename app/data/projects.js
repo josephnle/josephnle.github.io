@@ -10,7 +10,8 @@ module.exports = [
         name: "Campus Wayfinding",
         type: "Everyday Design",
         image: "/images/projects/wayfinding/wayfinding_funnel_cropped.png",
-        status: "In-progress"
+        status: "In-progress",
+        link: "/projects/wayfinding.html"
     },
     {
         name: "StudentHero",

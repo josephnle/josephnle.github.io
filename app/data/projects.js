@@ -22,7 +22,8 @@ module.exports = [
     {
         name: "SD Hacks",
         type: "Web Development",
-        image: "/images/projects/sdhacks/home_cropped.png"
+        image: "/images/projects/sdhacks/home_cropped.png",
+        link: "/projects/sdhacks.html"
     },
     {
         name: "Ice Blast",

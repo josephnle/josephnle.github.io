@@ -34,7 +34,8 @@ module.exports = [
     {
         name: "Basic Bites",
         type: "Web Design",
-        image: "/images/projects/basicbites/home_cropped.png"
+        image: "/images/projects/basicbites/home_cropped.png",
+        link: "/projects/basicbites.html"
     },
     {
         name: "Circle K",

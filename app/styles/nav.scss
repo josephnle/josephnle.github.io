@@ -21,6 +21,7 @@ $nav-min-width: 352px;
 
   a {
     color: black;
+    border-bottom: none;
 
     &.active {
       border-bottom: $nav-line-size solid $nav-color;

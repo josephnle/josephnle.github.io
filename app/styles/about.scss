@@ -1,0 +1,14 @@
+#about {
+  margin-top: 25px;
+  font-size: $font-size-base * 1.05;
+
+  img.me {
+    display: block;
+    max-width: 200px;
+    margin: auto;
+  }
+}
+
+.list-unstyled.bolded {
+  font-weight: bolder;
+}

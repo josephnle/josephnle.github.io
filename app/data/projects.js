@@ -16,7 +16,8 @@ module.exports = [
     {
         name: "StudentHero",
         image: "/images/projects/studenthero/homepage_cropped.png",
-        type: "Startup"
+        type: "Startup",
+        link: "/projects/studenthero.html"
     },
     {
         name: "SD Hacks",

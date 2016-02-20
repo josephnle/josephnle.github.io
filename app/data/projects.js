@@ -28,7 +28,8 @@ module.exports = [
     {
         name: "Ice Blast",
         type: "Web Design",
-        image: "/images/projects/iceblast/home_cropped.png"
+        image: "/images/projects/iceblast/home_cropped.png",
+        link: "/projects/iceblast.html"
     },
     {
         name: "Basic Bites",

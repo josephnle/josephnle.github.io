@@ -3,7 +3,8 @@ module.exports = [
         name: "Scouter",
         type: "Startup",
         image: "/images/projects/scouter/recruiter_mockup_cropped.png",
-        status: "In-progress"
+        status: "In-progress",
+        link: "/projects/scouter.html"
     },
     {
         name: "Campus Wayfinding",

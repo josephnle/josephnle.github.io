@@ -87,3 +87,20 @@
     }
   }
 }
+
+.project-bg {
+  &.scouter {
+    background: url(../images/projects/scouter/recruiter_mockup.png);
+    background-size: cover;
+    height: 100%;
+  }
+
+  .project-wrapper {
+    background: rgba(0,0,0,0.64);
+    height: 100%;
+  }
+}
+
+.project-page {
+  margin: 25px auto;
+}

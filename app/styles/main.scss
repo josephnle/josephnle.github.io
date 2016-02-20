@@ -15,6 +15,11 @@ a {
   color: black;
   border-bottom: 1px dotted #000;
 
+  &:visited, &:active {
+    color: black;
+    text-decoration: none;
+  }
+
   &:hover {
     color: black;
     text-decoration: none;

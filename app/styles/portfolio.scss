@@ -21,6 +21,13 @@
           transition-delay: .30s;
         }
       }
+
+      @media (max-width: $screen-phone) {
+        .overlay {
+          padding: 0;
+          width: 100%;
+        }
+      }
     }
 
     img {
@@ -89,12 +96,6 @@
 }
 
 .project-bg {
-  &.scouter {
-    background: url(../images/projects/scouter/recruiter_mockup.png);
-    background-size: cover;
-    height: 100%;
-  }
-
   .project-wrapper {
     background: rgba(0,0,0,0.64);
     height: 100%;

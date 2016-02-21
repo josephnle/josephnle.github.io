@@ -10,7 +10,7 @@
 
 .landing {
   width: 100%;
-  max-width: 1050px;
+  max-width: 550px;
   margin: auto;
   padding: 0 10px;
 
@@ -38,6 +38,7 @@
 
   @media (min-width: $screen-sm) {
     padding: 0 50px;
+    max-width: 925px;
 
     h1 {
       font-size: $font-size-h1 * 2.8;
@@ -50,6 +51,7 @@
 
   @media (min-width: $screen-lg) {
     padding: 0 100px;
+    max-width: 1050px;
   }
 }
 

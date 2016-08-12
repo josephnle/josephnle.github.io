@@ -107,6 +107,7 @@ gulp.task('fonts', () => {
 
 gulp.task('extras', () => {
   return gulp.src([
+    'app/CNAME',
     'app/*.*',
     '!app/*.html',
     '!app/*.hbs'

@@ -62,9 +62,29 @@
 
   * {
     padding: 0 5px;
+    line-height: 45px;
 
     &:first-child {
       padding-left: 0;
     }
+  }
+}
+
+img.me {
+  max-width: 150px;
+}
+
+a:visited.btn-primary {
+  color: white;
+}
+
+.footer {
+  margin-bottom: 20px;
+  a {
+    margin: 5px;
+  }
+  
+  @media (max-width: $screen-xs-max) {
+    text-align: center;
   }
 }

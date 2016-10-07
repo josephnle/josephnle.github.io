@@ -1,8 +1,9 @@
 $nav-padding-vertical: 10px;
 $nav-color: #000;
 $nav-line-size: 3px;
-$nav-height: 41px + 45px;
+$nav-height: 51px + 45px + 5px;
 $nav-min-width: 352px;
+$nav-logo-height: 51px;
 
 .j-nav {
   width: 100%;
@@ -11,6 +12,9 @@ $nav-min-width: 352px;
   font-size: $font-size-base * 1.1;
 
   .logo {
+    display: block;
+    padding-top: 5px;
+    height: $nav-logo-height;
     font-size: $font-size-h1;
     color: black;
 

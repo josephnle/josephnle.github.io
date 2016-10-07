@@ -34,6 +34,17 @@
 
   hr {
     border: 3px solid #000;
+    max-width: 0;
+    animation-name: zipline;
+    animation-duration: 0.9s;
+    animation-delay: 0.2s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease;
+  }
+
+  @keyframes zipline {
+    from {max-width: 0;}
+    to {max-width: 100%;}
   }
 
   @media (min-width: $screen-sm) {

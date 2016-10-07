@@ -9,9 +9,15 @@
             href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    {{> nav }}
+    {{#block 'nav'}}
+        {{> nav }}
+    {{/block}}
 
     {{#block 'content'}}
+    {{/block}}
+
+    {{#block 'footer'}}
+        {{> footer }}
     {{/block}}
 
     <script>

@@ -1,1 +1,1 @@
-"use strict";
+"use strict";$(".grid").masonry({itemSelector:".grid-item",columnWidth:".grid-sizer",percentPosition:!0});

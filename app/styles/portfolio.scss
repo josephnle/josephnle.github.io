@@ -169,4 +169,12 @@
 .grid-sizer, .grid-item {
   width: 33%;
   padding: 10px;
+
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    width: 50%;
+  }
 }

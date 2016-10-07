@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="341px" height="280px" viewBox="0 0 341 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>Wayfinding Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Wayfinding-Icon" transform="translate(-557.000000, -125.000000)" fill="#FFFFFF">
+            <g transform="translate(557.000000, 125.000000)">
+                <polygon id="Path-2" points="37 0 289.530844 0 340.49217 36.0219808 289.530844 73.8869467 37 72.8816822 72.1591287 36.0219808"></polygon>
+                <polygon id="Path-2-Copy" transform="translate(151.746085, 139.943473) rotate(-180.000000) translate(-151.746085, -139.943473) " points="0 103 252.530844 103 303.49217 139.021981 252.530844 176.886947 0 175.881682 35.1591287 139.021981"></polygon>
+                <polygon id="Path-2-Copy-2" points="37 206 289.530844 206 340.49217 242.021981 289.530844 279.886947 37 278.881682 72.1591287 242.021981"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

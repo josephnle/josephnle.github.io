@@ -29,12 +29,12 @@ module.exports = [
         image: "/images/projects/sdhacks/home_cropped.png",
         link: "/projects/sdhacks.html"
     },
-    {
-        name: "Ice Blast",
-        type: "Web Design",
-        image: "/images/projects/iceblast/home_cropped.png",
-        link: "/projects/iceblast.html"
-    },
+    // {
+    //     name: "Ice Blast",
+    //     type: "Web Design",
+    //     image: "/images/projects/iceblast/home_cropped.png",
+    //     link: "/projects/iceblast.html"
+    // },
     {
         name: "Basic Bites",
         type: "Web Design",

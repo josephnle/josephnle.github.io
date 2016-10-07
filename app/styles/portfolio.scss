@@ -1,107 +1,168 @@
-@keyframes expand {
-  from {width: 0;}
-  to {width: 35%;}
-}
+//@keyframes expand {
+//  from {width: 0;}
+//  to {width: 35%;}
+//}
+//
+//.projects {
+//  padding-top: 20px;
+//
+//  .project {
+//    margin: 40px 0;
+//    position: relative;
+//
+//    &:hover {
+//      .overlay {
+//        width: 35%;
+//        padding: 20px;
+//
+//        .overlay-content {
+//          opacity: 1;
+//          transition: opacity 0.9s;
+//          transition-delay: .30s;
+//        }
+//      }
+//
+//      @media (max-width: $screen-phone) {
+//        .overlay {
+//          padding: 0;
+//          width: 100%;
+//        }
+//      }
+//    }
+//
+//    img {
+//      position: relative;
+//      width: 100%;
+//      z-index: 1;
+//    }
+//
+//    .overlay {
+//      position: absolute;
+//      height: 100%;
+//      width: 0;
+//      top: 0;
+//      left: 0;
+//      z-index: 2;
+//      background-color: rgba(0,0,0,.83);
+//      padding: 6px;
+//      display: flex;
+//      align-items: center;
+//      align-content: flex-start;
+//      justify-content: center;
+//      flex-direction: column;
+//      transition: width .65s, padding 1s;
+//
+//      .overlay-content {
+//        padding: 0 20px;
+//        width: 100%;
+//        text-align: left;
+//        color: white;
+//        opacity: 0;
+//        transition: opacity 0.1s;
+//
+//        h2 {
+//          margin: 0;
+//        }
+//
+//        p {
+//          padding: 0;
+//          margin: 0;
+//        }
+//
+//        .status {
+//          padding: 0;
+//          margin: 0;
+//          font-style: italic;
+//        }
+//
+//        @media (min-width: $screen-md) {
+//          h2 {
+//            font-size: $font-size-h2 * 1.4;
+//          }
+//        }
+//
+//        @media (min-width: $screen-lg) {
+//          h2 {
+//            font-size: $font-size-h2 * 1.6;
+//          }
+//        }
+//      }
+//    }
+//
+//    &:first-child {
+//      margin-top: 20px;
+//    }
+//  }
+//}
+//
+//.project-bg {
+//  .project-wrapper {
+//    background: rgba(0,0,0,0.64);
+//    height: 100%;
+//  }
+//}
+//
+//.project-page {
+//  margin: 25px auto;
+//}
 
-.projects {
-  padding-top: 20px;
+.project {
+  padding: 20px;
+  text-align: center;
+  min-height: 200px;
+  display: flex;
 
-  .project {
-    margin: 40px 0;
-    position: relative;
+  img {
+    margin: auto;
+    max-width: 150px;
+    max-height: 150px;
+  }
 
-    &:hover {
-      .overlay {
-        width: 35%;
-        padding: 20px;
+  &.project-workday {
+    background-color: #006DB6;
+  }
 
-        .overlay-content {
-          opacity: 1;
-          transition: opacity 0.9s;
-          transition-delay: .30s;
-        }
-      }
+  &.project-scouter {
+    background: linear-gradient(45deg, #0d3349, lighten(#0d3349, 20%));
+  }
 
-      @media (max-width: $screen-phone) {
-        .overlay {
-          padding: 0;
-          width: 100%;
-        }
-      }
+  &.project-wayfinding {
+    background: linear-gradient(45deg, #10924E, lighten(#10924E, 13%));
+    img {
+      max-height: 150px;
     }
+  }
+
+  &.project-studenthero {
+    background: #333333;
 
     img {
-      position: relative;
-      width: 100%;
-      z-index: 1;
+      max-width: 175px;
     }
+  }
+  
+  &.project-sdhacks {
+    background: linear-gradient(-45deg, #12212F, #3E698F);
 
-    .overlay {
-      position: absolute;
-      height: 100%;
-      width: 0;
-      top: 0;
-      left: 0;
-      z-index: 2;
-      background-color: rgba(0,0,0,.83);
-      padding: 6px;
-      display: flex;
-      align-items: center;
-      align-content: flex-start;
-      justify-content: center;
-      flex-direction: column;
-      transition: width .65s, padding 1s;
-
-      .overlay-content {
-        padding: 0 20px;
-        width: 100%;
-        text-align: left;
-        color: white;
-        opacity: 0;
-        transition: opacity 0.1s;
-
-        h2 {
-          margin: 0;
-        }
-
-        p {
-          padding: 0;
-          margin: 0;
-        }
-
-        .status {
-          padding: 0;
-          margin: 0;
-          font-style: italic;
-        }
-
-        @media (min-width: $screen-md) {
-          h2 {
-            font-size: $font-size-h2 * 1.4;
-          }
-        }
-
-        @media (min-width: $screen-lg) {
-          h2 {
-            font-size: $font-size-h2 * 1.6;
-          }
-        }
-      }
+    img {
+      max-height: 130px;
     }
+  }
 
-    &:first-child {
-      margin-top: 20px;
+  &.project-basicbites {
+    background: #000;
+
+    img {
+      max-height: 130px;
     }
+  }
+
+  &.project-ucsdcki {
+    background: #000;
   }
 }
 
-.project-bg {
-  .project-wrapper {
-    background: rgba(0,0,0,0.64);
-    height: 100%;
-  }
-}
-
-.project-page {
-  margin: 25px auto;
+.grid-sizer, .grid-item {
+  width: 33%;
+  padding: 10px;
 }

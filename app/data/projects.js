@@ -1,32 +1,37 @@
 module.exports = [
     {
         name: "Workday",
+        class: "workday",
         type: "Internship",
-        image: "/images/projects/workday/workday-preview.png",
+        image: "/images/projects/workday/workday-logo.svg",
         link: "/projects/workday.html"
     },
     {
         name: "Scouter",
+        class: "scouter",
         type: "Startup",
-        image: "/images/projects/scouter/recruiter_mockup_cropped.png",
+        image: "/images/projects/scouter/logo-white.png",
         link: "/projects/scouter.html"
     },
     {
         name: "Campus Wayfinding",
+        class: "wayfinding",
         type: "Everyday Design",
-        image: "/images/projects/wayfinding/wayfinding_funnel_cropped.png",
+        image: "/images/projects/wayfinding/wayfinding-icon.svg",
         link: "/projects/wayfinding.html"
     },
     {
         name: "StudentHero",
-        image: "/images/projects/studenthero/homepage_cropped.png",
+        class: "studenthero",
+        image: "/images/projects/studenthero/logo.png",
         type: "Startup",
         link: "/projects/studenthero.html"
     },
     {
         name: "SD Hacks",
+        class: "sdhacks",
         type: "Web Development",
-        image: "/images/projects/sdhacks/home_cropped.png",
+        image: "/images/projects/sdhacks/logo.png",
         link: "/projects/sdhacks.html"
     },
     // {
@@ -37,14 +42,16 @@ module.exports = [
     // },
     {
         name: "Basic Bites",
+        class: "basicbites",
         type: "Web Design",
-        image: "/images/projects/basicbites/home_cropped.png",
+        image: "/images/projects/basicbites/logo.png",
         link: "/projects/basicbites.html"
     },
     {
-        name: "Circle K",
+        name: "UCSD Circle K",
+        class: "ucsdcki",
         type: "Web Design & Development",
-        image: "/images/projects/cki/home_cropped.png",
+        image: "/images/projects/cki/logo.jpg",
         link: "/projects/circlek.html"
     }
 ];

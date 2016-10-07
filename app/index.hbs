@@ -1,7 +1,7 @@
 {{#extend 'layout'}}
 
     {{#content 'content'}}
-        <div class="landing-wrapper">
+        <div class="container">
             <div class="landing">
                 <h1 class="my-name">Joseph Le</h1>
                 <h2>Designer &bull; Developer</h2>
@@ -17,6 +17,21 @@
                     <a target="_blank" href="http://stackoverflow.com/users/3870377/joseph"><i
                             class="fa fa-2x fa-stack-overflow"></i></a>
                 </div>
+            </div>
+
+            <br/>
+
+            <div class="grid">
+                <div class="grid-sizer"></div>
+                {{#each projects}}
+                <a href="{{link}}">
+                    <div class="grid-item">
+                        <div class="project{{#if class}} project-{{class}}{{/if}}">
+                            <img src="{{image}}" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </a>
+                {{/each}}
             </div>
         </div>
     {{/content}}

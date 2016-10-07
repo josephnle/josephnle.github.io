@@ -126,6 +126,10 @@
     background: linear-gradient(45deg, #0d3349, lighten(#0d3349, 20%));
   }
 
+  &.project-scoutr {
+    background: linear-gradient(45deg, #DA6F6F, darken(#DA6F6F, 20%));
+  }
+
   &.project-wayfinding {
     background: linear-gradient(45deg, #10924E, lighten(#10924E, 13%));
     img {

@@ -21,6 +21,13 @@ module.exports = [
         link: "/projects/wayfinding.html"
     },
     {
+      name: "Scoutr",
+      class: "scoutr",
+      type: "Mobile App Design",
+      image: "/images/projects/scoutr/flat-preview.svg",
+      link: "/projects/scoutr.html"
+    },
+    {
         name: "StudentHero",
         class: "studenthero",
         image: "/images/projects/studenthero/logo.png",

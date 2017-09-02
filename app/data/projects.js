@@ -47,18 +47,18 @@ module.exports = [
     //     image: "/images/projects/iceblast/home_cropped.png",
     //     link: "/projects/iceblast.html"
     // },
-    {
-        name: "Basic Bites",
-        class: "basicbites",
-        type: "Web Design",
-        image: "/images/projects/basicbites/logo.png",
-        link: "/projects/basicbites.html"
-    },
-    {
-        name: "UCSD Circle K",
-        class: "ucsdcki",
-        type: "Web Design & Development",
-        image: "/images/projects/cki/logo.jpg",
-        link: "/projects/circlek.html"
-    }
+    // {
+    //     name: "Basic Bites",
+    //     class: "basicbites",
+    //     type: "Web Design",
+    //     image: "/images/projects/basicbites/logo.png",
+    //     link: "/projects/basicbites.html"
+    // },
+    // {
+    //     name: "UCSD Circle K",
+    //     class: "ucsdcki",
+    //     type: "Web Design & Development",
+    //     image: "/images/projects/cki/logo.jpg",
+    //     link: "/projects/circlek.html"
+    // }
 ];
